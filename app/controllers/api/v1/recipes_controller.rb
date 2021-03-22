@@ -16,7 +16,7 @@ class Api::V1::RecipesController < ApplicationController
   end
 
   def show
-    render json: {status: :ok, data: {recipe: recipe}}
+    render json: {status: :ok, data: {recipe: @recipe}}
   end
 
   def destroy
