@@ -11,4 +11,6 @@ Rails.application.routes.draw do
       delete "/destroy/:id", to: "recipes#destroy"
     end
   end
+
+  match '*path', to: 'homepage#index', via: :all
 end
